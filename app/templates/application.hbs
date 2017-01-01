@@ -1,0 +1,42 @@
+<nav class="nav">
+  <div class="nav-left">
+    {{#link-to "index" class="nav-item is-brand"}}
+      <img src="http://bulma.io/images/bulma-type.png" alt="Bulma logo">
+    {{/link-to}}
+  </div>
+
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <div class="nav-right nav-menu">
+    {{#link-to "index" class="nav-item"}}
+      Home
+    {{/link-to}}
+    {{#link-to "contact" class="nav-item"}}
+      Contact
+    {{/link-to}}
+    {{#link-to "about" class="nav-item"}}
+      About
+    {{/link-to}}
+    <a class="nav-item" href="https://github.com/emberatx">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="https://twitter.com/emberatx">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="https://www.youtube.com/channel/UCl7qY85b7KLJV3xnn1Xh_Cw">
+      <span class="icon">
+        <i class="fa fa-youtube"></i>
+      </span>
+    </a>
+  </div>
+</nav>
+
+{{outlet}}

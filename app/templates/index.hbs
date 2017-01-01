@@ -1,0 +1,23 @@
+<section class="hero is-info is-small is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title">
+            <a href={{closestMeetup.link}}>{{closestMeetup.name}}</a>
+          </h1>
+          <h2 class="subtitle">
+            {{meetupDate}} <br />
+            {{closestMeetup.venue.name}} <br/>
+            <a href="http://maps.google.com/?q={{closestMeetup.venue.address_1}}">
+              {{closestMeetup.venue.address_1}}
+            </a>
+          </h2>
+        </div>
+        <div class="column">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6aWauA9-fV8?list=PLHCmVP3S9Z1M9WRh6wkWWitGj9yq9SILL" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
