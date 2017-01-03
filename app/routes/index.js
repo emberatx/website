@@ -1,13 +1,8 @@
 import Ember from 'ember';
+import fetch from "ember-network/fetch";
 
 export default Ember.Route.extend({
   model() {
-    return Ember.$.ajax({
-      url: 'https://api.meetup.com/Ember-ATX/events?&sign=true&photo-host=public&page=1&page=1&status=upcoming',
-      dataType: 'jsonp',
-      success: function(response) {
-        return response;
-      }
-    });
+    return fetch('https://shielded-bayou-35314.herokuapp.com/').then(response => response.json());
   }
 });
